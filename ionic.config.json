@@ -1,0 +1,7 @@
+{
+  "name": "tut",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

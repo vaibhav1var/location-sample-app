@@ -1,0 +1,7 @@
+{
+  "appId": "com.ionic.sarter",
+  "appName": "tut",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
