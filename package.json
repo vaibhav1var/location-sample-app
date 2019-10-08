@@ -21,11 +21,18 @@
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
     "@capacitor/android": "^1.2.1",
-    "@capacitor/core": "1.2.1",
+    "@capacitor/core": "^1.2.1",
+    "@capacitor/ios": "^1.2.1",
+    "@ionic-native/background-geolocation": "^5.14.0",
     "@ionic-native/core": "^5.0.0",
     "@ionic-native/splash-screen": "^5.0.0",
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^4.7.1",
+    "@mauron85/cordova-plugin-background-geolocation": "^3.1.0",
+    "cordova-android-support-gradle-release": "^3.0.1",
+    "cordova-background-geolocation-lt": "^3.2.2",
+    "cordova-plugin-background-fetch": "^5.6.0",
+    "cordova-plugin-cocoalumberjack": "0.0.4",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
@@ -40,7 +47,7 @@
     "@angular/compiler": "~8.1.2",
     "@angular/compiler-cli": "~8.1.2",
     "@angular/language-service": "~8.1.2",
-    "@capacitor/cli": "1.2.1",
+    "@capacitor/cli": "^1.2.1",
     "@ionic/angular-toolkit": "~2.0.0",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
@@ -58,5 +65,15 @@
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-background-geolocation": {
+        "GOOGLE_PLAY_SERVICES_VERSION": "11+",
+        "ANDROID_SUPPORT_LIBRARY_VERSION": "23+",
+        "ALWAYS_USAGE_DESCRIPTION": "App requires ...",
+        "MOTION_USAGE_DESCRIPTION": "App requires motion detection"
+      }
+    }
+  }
 }
